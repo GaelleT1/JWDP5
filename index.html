@@ -5,7 +5,8 @@
         <meta charset="utf-8">
         <meta name="view__clickport" content="width=device-width, initial scale=1.0">
         <script src="https://kit.fontawesome.com/f811b3604b.js" crossorigin="anonymous"></script>
-        <script src="main.js"></script>
+        <script src="/pages/main.js"></script>
+        <script src ="/pages/product.js"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,13 +17,11 @@
     </head>
     <body>
         <header>
-            <div class="overlay"></div>
-            <div class="logo">
-                <a href="index.html">
-                    <h1 class="logo.ours">Orinours</h1>
-                </a>
-                <p>L' Ourson traditionnel fait main</p>
-            </div>
+            <a href="/index.html">
+                <div class="logo">
+                    Orinours
+                </div>
+            </a>
             <div class="searchbar">
                 <div class="conteneur__form">
                     <form>
@@ -55,103 +54,11 @@
             </nav>
         </header>
         <main>
-            <section class="cards__container">
-                <div class="cards">
-                    <div class="single__card">
-                        <img src="assets/images/teddy_1.jpg" alt="Norbert Teddy">
-                        <div class="card__description">
-                            <div class="card__info">
-                                <h2>Norbert</h2>
-                                <p class="price">45€</p>
-                            </div>
-                            <div class="choose">
-                                <div class="view__click">
-                                    <a href="pages/product.html"><i class="fas fa-eye"></i></a>
-                                </div>
-                                <div class="add__click">
-                                    <a class="add__cart" href="/pages/basket.html">
-                                        <i class="fas fa-cart-plus"></i>
-                                    </a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single__card">
-                        <img src="assets/images/teddy_2.jpg" alt="Arnold Teddy">
-                        <div class="card__description">
-                            <div class="card__info">
-                                <h2>Arnold</h2>
-                                <p class="price">45€</p>
-                            </div>
-                            <div class="choose">
-                                <div class="view__click">
-                                    <a href="pages/product.html"><i class="fas fa-eye"></i></a>
-                                </div>
-                                <div class="add__click">
-                                    <a class="add__cart" href="/pages/basket.html">
-                                        <i class="fas fa-cart-plus"></i>
-                                    </a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>    
-                    <div class="single__card">
-                        <img src="assets/images/teddy_3.jpg" alt="Lenny & Carl Teddy">
-                        <div class="card__description">
-                            <div class="card__info">
-                                <h2>Lenny & Carl</h2>
-                                <p class="price">45€</p> 
-                            </div>
-                            <div class="choose">
-                                <div class="view__click">
-                                    <a href="pages/product.html"><i class="fas fa-eye"></i></a>
-                                </div>
-                                <div class="add__click">
-                                    <a class="add__cart" href="/pages/basket.html">
-                                        <i class="fas fa-cart-plus"></i>
-                                    </a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single__card">
-                        <img src="assets/images/teddy_4.jpg" alt="Gustav Teddy">
-                        <div class="card__description">
-                            <div class="card__info">
-                                <h2>Gustav</h2>
-                                <p class="price">45€</p>
-                            </div> 
-                            <div class="choose">
-                                <div class="view__click">
-                                    <a href="pages/product.html"><i class="fas fa-eye"></i></a>
-                                </div>
-                                <div class="add__click">
-                                    <a class="add__cart" href="/pages/basket.html">
-                                        <i class="fas fa-cart-plus"></i>
-                                    </a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="single__card">
-                        <img src="assets/images/teddy_5.jpg" alt="Garfunkel Teddy">
-                        <div class="card__description">
-                            <div class="card__info">
-                                <h2>Garfunkel</h2>
-                                <p class="price">45€</p>
-                            </div>
-                            <div class="choose">
-                                <div class="view__click">
-                                    <a href="pages/product.html"><i class="fas fa-eye"></i></a>
-                                </div>
-                                <div class="add__click">
-                                    <a class="add__cart" href="/pages/basket.html">
-                                        <i class="fas fa-cart-plus"></i>
-                                    </a>
-                                </div>  
-                            </div>
-                        </div>
-                    </div>
+            <h1>L' Ourson traditionnel fait main</h1>
+            <section  class="cards__container">
+                <div id ="cards" class="cards">
+
+
                 </div>
             </section>
         </main>
