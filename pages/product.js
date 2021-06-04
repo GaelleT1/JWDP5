@@ -1,4 +1,11 @@
-fetch(fetch ("http://localhost:3000/api/teddies")
+let colorList = document.getElementsById('select')
+let options = createElement('option');
+let colorOptions = ["0"]["1"]["2"] ["3"] ["4"];
+select.appendChild(options);
+
+const url = "http://localhost:3000/api/teddies";
+
+fetch(url)
 .then(function(res) {
   if (res.ok) {
     return res.json();
@@ -6,19 +13,19 @@ fetch(fetch ("http://localhost:3000/api/teddies")
 })
 .then(function(value){
     console.log(value);
-    PushTeddies(value);
+    (value);
 })
-.catch(function(error){}));
+
+for (let i = 0; i < data.length; i++) {
+  options = document.createElement('option');
+  options.text = data[i].colorList;
+  colorList.add(options);
+}    
+  
+.catch(function(error){});
 
 
-let select = document.getElementById("select");
-let options = ["0"]["1"]["2"] ["3"] ["4"];
-for(let i = 0;i < "options.length"; i++){
-    let opt =option[i];
-    let el = document.createElement("options");
-    el.textcontent = opt
-    select.appendChild(el);
-}
+
 
 
 

@@ -66,12 +66,8 @@ nav i{
 }
 
 
-h1 {
-    font-family:Pacifico, sans-serif;
-    font-size: 2rem;
-    color:var(--darkBlue);
-}
-
+ 
+    
 /*------------------Barre de recherche----------------------------*/
 .searchbar{
     height: 40px;
@@ -120,7 +116,7 @@ input{
 }
     
 .fa-user-circle {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     color: var(--darkBlue);
     margin-right: 30px;
 }
@@ -128,15 +124,16 @@ input{
 .cart{
     display:flex;
     align-items:center;
-    font-size:1rem;
+    font-size:1.5rem;
     justify-content: space-between;
     margin-right:60px;
     border: transparent 1px solid;
     background-color: var(--darkBlue);
     color: white;
-    padding:3px;
+    padding:5px;
     width:90px;
     height: 40px;
+    border-radius:20px;
 }
 
 
@@ -149,6 +146,7 @@ h1{
     font-family: pacifico;
     color: var(--darkBlue);
     font-weight: 400;
+    font-size:3rem;
 }       
 
 
@@ -267,6 +265,10 @@ footer ul{
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
+    list-style-type: none;
+    font-size: 1.5rem;
+    color: var(--darkBlue);
+    font-weight: 700;
 }
 
 
@@ -280,8 +282,10 @@ footer ul{
 }
 
 .social i{
-    font-size:2rem;
-    font-weight:700;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--darkBlue);
+    padding-bottom: 1rem;
 }
 
 

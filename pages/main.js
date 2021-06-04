@@ -26,29 +26,27 @@ cardsContainer.appendChild(singleCard);
 singleCard.append(image,cardDescription);
 cardDescription.append(tedName,tedPrice, viewBtn);
 
+const url = "http://localhost:3000/api/teddies";
+fetch(url)
+.then(function(res) {
+  if (res.ok) {
+    return res.json();
+  }
+})
+.then(function(value){
+    console.log(value);
+    PushTeddies(value);
+})
+.catch(function(error){});
 
-fetch ("http://localhost:3000/api/teddies")
-  .then(function(res) {
-      if (res.ok) {
-        return res.json();
-      }
-    })
-  .then(function(value){
-        console.log(value);
-        teddies(value);
-    })
-  .catch(function(error){});
-
-  teddies.push(``)
-  let teddies =[[0],[1],[2],[3],[4] ];
+let teddies = [[0],[1],[2],[3],[4]];
+teddies.push(``)
+  
     function pushTeddies(){
       let ListOfteddies ='';
-      teddies.forEach(ted => listOfteddies += ``)
-      const cards = document.getElementById('cards');
+      pushTeddies.forEach(ted => listOfteddies += ``)
       for(let teddies of ListOfTeddies){
-      let newItem = document.createElement('li');
-      newItem.textContent = "teddies"
-      cards.appendChild('newItem');
+      cards.appendChild(singleCard);
     }
   }
  
